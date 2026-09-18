@@ -11,6 +11,8 @@ BASE = Path(__file__).resolve().parent
 DB = Path(os.getenv('TRENDWATCH_DB', str(BASE/'trendwatch.sqlite3')))
 TSET = 'https://cdn.tsetmc.com'
 UA = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140 Safari/537.36','Accept':'application/json,text/plain,*/*','Referer':'https://www.tsetmc.com/'}
+REFRESH_LOCK = threading.Lock()
+LAST_STATUS = {'google':'waiting','money':'waiting','google_error':None,'money_error':None,'updated_at':None}
 
 def db():
     c=sqlite3.connect(DB)
@@ -21,7 +23,7 @@ def tget(path, params=None):
     last=None
     for attempt in range(4):
         try:
-            r=requests.get(TSET+path, params=params, headers=UA, timeout=(10,35))
+            r=requests.get(TSET+path, params=params, headers=UA, timeout=(8,20))
             r.raise_for_status()
             data=r.json()
             if not isinstance(data, dict):
@@ -53,50 +55,66 @@ def collect_today_money():
         bn=float(x.get('buy_N_Volume') or x.get('l_buy_volume') or 0); sn=float(x.get('sell_N_Volume') or x.get('l_sell_volume') or 0)
         real+=(bi-si)*p; legal+=(bn-sn)*p
     if real == 0 and legal == 0: raise RuntimeError('TSETMC flow calculation returned zero')
-    save_money(real,legal); return real,legal
+    save_money(real,legal)
+    return real,legal
 
 def collect_google():
     from pytrends.request import TrendReq
-    pt=TrendReq(hl='fa-IR',tz=210,timeout=(10,30),retries=2,backoff_factor=0.5)
+    pt=TrendReq(hl='fa-IR',tz=210,timeout=(8,20),retries=1,backoff_factor=0.5)
     trends={}
     for term in ['بورس','طلا','دلار']:
-        try:
-            pt.build_payload([term],cat=0,timeframe='today 12-m',geo='IR',gprop='')
-            df=pt.interest_over_time()
-            arr=[]
-            for idx,row in df.iterrows():
-                val=row.get(term)
-                if val is not None and not (isinstance(val,float) and math.isnan(val)):
-                    arr.append({'date':idx.date().isoformat(),'value':int(val),'real':True})
-            trends[term]=arr
-        except Exception:
-            trends[term]=[]
-    if not any(trends.values()):
-        raise RuntimeError('Google Trends returned no data')
+        pt.build_payload([term],cat=0,timeframe='today 12-m',geo='IR',gprop='')
+        df=pt.interest_over_time()
+        arr=[]
+        for idx,row in df.iterrows():
+            val=row.get(term)
+            if val is not None and not (isinstance(val,float) and math.isnan(val)):
+                arr.append({'date':idx.date().isoformat(),'value':int(val),'real':True})
+        if not arr: raise RuntimeError(f'Google Trends returned no data for {term}')
+        trends[term]=arr
     return trends
 
-def background_collect():
+def refresh_data():
+    if not REFRESH_LOCK.acquire(blocking=False):
+        return
     try:
-        today=dt.date.today().isoformat()
-        c=db(); already=c.execute('SELECT 1 FROM money WHERE date=?',(today,)).fetchone(); c.close()
-        if not already:
+        LAST_STATUS['money']='loading'; LAST_STATUS['money_error']=None
+        try:
             collect_today_money()
-    except Exception:
-        pass
+            LAST_STATUS['money']='ok'
+        except Exception as e:
+            LAST_STATUS['money']='error'; LAST_STATUS['money_error']=str(e)[:250]
+        LAST_STATUS['google']='loading'; LAST_STATUS['google_error']=None
+        try:
+            trends=collect_google()
+            LAST_STATUS['google']='ok'
+            LAST_STATUS['google_error']=None
+            c=db()
+            c.execute('CREATE TABLE IF NOT EXISTS google(date TEXT, term TEXT, value INTEGER, PRIMARY KEY(date,term))')
+            for term,arr in trends.items():
+                for x in arr:
+                    c.execute('INSERT OR REPLACE INTO google(date,term,value) VALUES(?,?,?)',(x['date'],term,x['value']))
+            c.commit(); c.close()
+        except Exception as e:
+            LAST_STATUS['google']='error'; LAST_STATUS['google_error']=str(e)[:250]
+        LAST_STATUS['updated_at']=dt.datetime.now(dt.timezone.utc).isoformat()
+        print(f'DATA REFRESH: money={LAST_STATUS["money"]} google={LAST_STATUS["google"]}', flush=True)
+    finally:
+        REFRESH_LOCK.release()
 
 @APP.on_event('startup')
 def startup():
     print('TRENDWATCH PRO 5.2 LIVE DATA STARTED', flush=True)
     print('COLLECTOR CHECK STARTED', flush=True)
-    threading.Thread(target=background_collect, daemon=True).start()
+    threading.Thread(target=refresh_data, daemon=True).start()
 
 @APP.get('/api/version')
 def version_check():
-    return {'build':'TWPRO-5.2-LIVE-20260918-A','server':'server.py','manifest':True,'collector':'startup-background'}
+    return {'build':'TWPRO-5.2-LIVE-20260918-B','server':'server.py','manifest':True,'collector':'background-nonblocking'}
 
 @APP.get('/api/health')
 def health():
-    return {'ok':True,'service':'TrendWatch Pro API','version':'5.2-live-data','database':str(DB),'collector':'startup-background'}
+    return {'ok':True,'service':'TrendWatch Pro API','version':'5.2-live-data','database':str(DB),'collector':'background-nonblocking','status':LAST_STATUS}
 
 @APP.get('/manifest.json')
 def manifest():
@@ -104,26 +122,30 @@ def manifest():
 
 @APP.get('/api/dashboard-data')
 def dashboard_data(range: str='12m', days:int=30):
-    trends={}; trend_error=None
+    # Never wait for external providers here. Return cached real data immediately.
+    trends={}
     try:
-        trends=collect_google()
-    except Exception as e:
-        trend_error=str(e)[:250]
-    money_error=None
+        c=db()
+        c.execute('CREATE TABLE IF NOT EXISTS google(date TEXT, term TEXT, value INTEGER, PRIMARY KEY(date,term))')
+        for term in ['بورس','طلا','دلار']:
+            rows=c.execute('SELECT date,value FROM google WHERE term=? ORDER BY date DESC LIMIT ?', (term,max(1,min(days,365)))).fetchall()
+            trends[term]=[{'date':d,'value':int(v),'real':True} for d,v in reversed(rows)]
+        c.close()
+    except Exception:
+        trends={'بورس':[],'طلا':[],'دلار':[]}
     try:
-        today=dt.date.today().isoformat()
-        c0=db(); already=c0.execute('SELECT 1 FROM money WHERE date=?',(today,)).fetchone(); c0.close()
-        if not already: collect_today_money()
-    except Exception as e:
-        money_error=str(e)[:250]
-    c=db(); rows=c.execute('SELECT date,real_value,legal_value FROM money ORDER BY date DESC LIMIT ?', (max(1,min(days,365)),)).fetchall(); c.close(); rows=list(reversed(rows))
+        c=db()
+        rows=c.execute('SELECT date,real_value,legal_value FROM money ORDER BY date DESC LIMIT ?', (max(1,min(days,365)),)).fetchall()
+        c.close(); rows=list(reversed(rows))
+    except Exception:
+        rows=[]
     return {
         'google_trends':trends,
-        'real_money':[{'date':d,'value':round(v/1e10,2)} for d,v,l in rows],
-        'legal_money':[{'date':d,'value':round(l/1e10,2)} for d,v,l in rows],
+        'real_money':[{'date':d,'value':round(v/1e10,2),'real':True} for d,v,l in rows],
+        'legal_money':[{'date':d,'value':round(l/1e10,2),'real':True} for d,v,l in rows],
         'source':{'google':'Google Trends','money':'TSETMC ClientTypeAll + MarketWatch'},
-        'status':{'google':'ok' if any(trends.values()) else 'error','money':'ok' if rows else 'error'},
-        'errors':{'google':trend_error,'money':money_error},
+        'status':{'google':'ok' if any(trends.values()) else LAST_STATUS['google'],'money':'ok' if rows else LAST_STATUS['money']},
+        'errors':{'google':LAST_STATUS['google_error'],'money':LAST_STATUS['money_error']},
         'generated_at':dt.datetime.now(dt.timezone.utc).isoformat()
     }
 
