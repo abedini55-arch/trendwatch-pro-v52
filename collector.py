@@ -92,18 +92,32 @@ def main():
         "errors": {},
         "all_real": True
     }
+
     try:
         out["google_trends"] = collect_google()
+        print("GOOGLE: OK - real Google Trends data collected")
     except Exception as e:
-        out["errors"]["google"] = str(e)[:500]
+        out["errors"]["google"] = str(e)[:1000]
+        print(f"GOOGLE: ERROR - {out['errors']['google']}")
+
     try:
         out["money"] = collect_tsetmc()
+        print("TSETMC: OK - real TSETMC data collected")
     except Exception as e:
-        out["errors"]["money"] = str(e)[:500]
+        out["errors"]["money"] = str(e)[:1000]
+        print(f"TSETMC: ERROR - {out['errors']['money']}")
+
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
-    if not out["google_trends"] and not out["money"]:
-        raise SystemExit("No provider returned real data; live_data.json records the errors.")
+
+    print("\n=== TRENDWATCH COLLECTOR RESULT ===")
+    print(json.dumps(out, ensure_ascii=False, indent=2))
+    if out["google_trends"] or out["money"]:
+        print("RESULT: At least one real provider returned data.")
+    else:
+        print("RESULT: NO REAL PROVIDER DATA. Details above and in live_data.json.")
+    # Do not fail the workflow merely because an external provider is unavailable.
+    # GitHub Actions can then commit the diagnostic live_data.json for inspection.
 
 if __name__ == "__main__":
     main()
