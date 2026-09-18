@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
-import sqlite3, datetime as dt, math, os, time
+import sqlite3, datetime as dt, math, os, time, threading
 import requests
 
 APP = FastAPI(title='TrendWatch Pro API')
@@ -69,15 +69,32 @@ def collect_google():
                 if val is not None and not (isinstance(val,float) and math.isnan(val)):
                     arr.append({'date':idx.date().isoformat(),'value':int(val),'real':True})
             trends[term]=arr
-        except Exception as e:
+        except Exception:
             trends[term]=[]
     if not any(trends.values()):
         raise RuntimeError('Google Trends returned no data')
     return trends
 
+def background_collect():
+    try:
+        today=dt.date.today().isoformat()
+        c=db(); already=c.execute('SELECT 1 FROM money WHERE date=?',(today,)).fetchone(); c.close()
+        if not already:
+            collect_today_money()
+    except Exception:
+        pass
+
+@APP.on_event('startup')
+def startup():
+    threading.Thread(target=background_collect, daemon=True).start()
+
 @APP.get('/api/health')
 def health():
-    return {'ok':True,'service':'TrendWatch Pro API','version':'5.2-live-data','database':str(DB)}
+    return {'ok':True,'service':'TrendWatch Pro API','version':'5.2-live-data','database':str(DB),'collector':'startup-background'}
+
+@APP.get('/manifest.json')
+def manifest():
+    return JSONResponse({'name':'TrendWatch Pro','short_name':'TrendWatch Pro','start_url':'/','display':'standalone','background_color':'#0b1020','theme_color':'#0b1020'})
 
 @APP.get('/api/dashboard-data')
 def dashboard_data(range: str='12m', days:int=30):
