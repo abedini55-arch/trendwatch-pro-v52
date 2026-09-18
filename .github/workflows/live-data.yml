@@ -1,0 +1,28 @@
+name: TrendWatch Live Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --disable-pip-version-check requests pytrends pandas
+      - run: python collector.py --output live_data.json
+      - name: Commit live data
+        run: |
+          git config user.name "TrendWatch Live Collector"
+          git config user.email "actions@users.noreply.github.com"
+          git add live_data.json
+          git diff --cached --quiet || git commit -m "Update live market data"
+          git push
