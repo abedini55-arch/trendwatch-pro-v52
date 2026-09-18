@@ -5,7 +5,7 @@ Only real provider responses are written. Failed providers remain unavailable.
 import argparse, datetime as dt, json, math, time
 import requests
 
-TSET = "https://cdn.tsetmc.com"
+TSET_HOSTS = ["https://cdn.tsetmc.com", "https://cdn10.tsetmc.com"]
 UA = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.36",
     "Accept": "application/json,text/plain,*/*",
@@ -13,20 +13,18 @@ UA = {
 }
 
 def tget(path, params=None):
-    last = None
-    for attempt in range(4):
+    errors = []
+    for host in TSET_HOSTS:
         try:
-            r = requests.get(TSET + path, params=params, headers=UA, timeout=(8,20))
+            r = requests.get(host + path, params=params, headers=UA, timeout=(15,30))
             r.raise_for_status()
             data = r.json()
             if not isinstance(data, dict):
                 raise RuntimeError("TSETMC returned non-object JSON")
             return data
         except Exception as e:
-            last = e
-            if attempt < 3:
-                time.sleep(2 * (attempt + 1))
-    raise RuntimeError(f"TSETMC {path}: {last}")
+            errors.append(f"{host}: {e}")
+    raise RuntimeError(f"TSETMC {path}: " + " | ".join(errors))
 
 def collect_tsetmc():
     mw = tget("/api/ClosingPrice/GetMarketWatch", {
@@ -66,7 +64,7 @@ def collect_tsetmc():
 
 def collect_google():
     from pytrends.request import TrendReq
-    pt = TrendReq(hl="fa-IR", tz=210, timeout=(8,20), retries=1, backoff_factor=0.5)
+    pt = TrendReq(hl="fa-IR", tz=210, timeout=(15,30), retries=0, backoff_factor=0)
     result = {}
     for term in ["بورس","طلا","دلار"]:
         pt.build_payload([term], timeframe="today 12-m", geo="IR", gprop="")
