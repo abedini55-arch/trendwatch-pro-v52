@@ -86,7 +86,13 @@ def background_collect():
 
 @APP.on_event('startup')
 def startup():
+    print('TRENDWATCH PRO 5.2 LIVE DATA STARTED', flush=True)
+    print('COLLECTOR CHECK STARTED', flush=True)
     threading.Thread(target=background_collect, daemon=True).start()
+
+@APP.get('/api/version')
+def version_check():
+    return {'build':'TWPRO-5.2-LIVE-20260918-A','server':'server.py','manifest':True,'collector':'startup-background'}
 
 @APP.get('/api/health')
 def health():
