@@ -1,10 +1,12 @@
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
+from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
 import sqlite3, json, datetime as dt, math, os
 import requests
 
 APP=FastAPI(title='TrendWatch Pro API')
+APP.add_middleware(CORSMiddleware, allow_origins=['*'], allow_credentials=False, allow_methods=['*'], allow_headers=['*'])
 BASE=Path(__file__).resolve().parent
 DB=Path(os.getenv('TRENDWATCH_DB', str(BASE/'trendwatch.sqlite3')))
 TSET='https://cdn.tsetmc.com'
@@ -16,8 +18,17 @@ def db():
     return c
 
 def tget(path, params=None):
-    r=requests.get(TSET+path,params=params,headers=UA,timeout=25)
-    r.raise_for_status(); return r.json()
+    last=None
+    for attempt in range(3):
+        try:
+            r=requests.get(TSET+path,params=params,headers=UA,timeout=25)
+            r.raise_for_status()
+            return r.json()
+        except Exception as e:
+            last=e
+            if attempt < 2:
+                import time; time.sleep(1.5*(attempt+1))
+    raise last
 
 def save_money(real_value, legal_value):
     today=dt.date.today().isoformat(); c=db()
@@ -45,7 +56,7 @@ def dashboard_data(range: str='12m', days:int=30):
     trends={}; trend_error=None
     try:
         from pytrends.request import TrendReq
-        pt=TrendReq(hl='fa-IR',tz=210,timeout=(10,25))
+        pt=TrendReq(hl='fa-IR',tz=210,timeout=(10,30),retries=2,backoff_factor=0.5)
         for term in ['بورس','طلا','دلار']:
             pt.build_payload([term],cat=0,timeframe='today 12-m',geo='IR',gprop='')
             df=pt.interest_over_time(); arr=[]
@@ -56,7 +67,9 @@ def dashboard_data(range: str='12m', days:int=30):
             trends[term]=arr
     except Exception as e: trend_error=str(e)[:180]
     money_error=None
-    try: collect_today_money()
+    try:
+        today=dt.date.today().isoformat(); c0=db(); already=c0.execute('SELECT 1 FROM money WHERE date=?',(today,)).fetchone(); c0.close()
+        if not already: collect_today_money()
     except Exception as e: money_error=str(e)[:180]
     c=db(); rows=c.execute('SELECT date,real_value,legal_value FROM money ORDER BY date DESC LIMIT ?', (max(1,min(days,365)),)).fetchall(); c.close(); rows=list(reversed(rows))
     return {'google_trends':trends,'real_money':[{'date':d,'value':round(v/1e10,2)} for d,v,l in rows],'legal_money':[{'date':d,'value':round(l/1e10,2)} for d,v,l in rows],'source':{'google':'Google Trends','money':'TSETMC ClientTypeAll + MarketWatch'},'status':{'google':'ok' if trends else 'error','money':'ok' if rows else 'error'},'errors':{'google':trend_error,'money':money_error},'generated_at':dt.datetime.now(dt.timezone.utc).isoformat()}
