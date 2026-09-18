@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: trendwatch-pro-v52
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:APP --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.5
