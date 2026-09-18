@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install --disable-pip-version-check requests pytrends pandas
+      - run: pip install --disable-pip-version-check "urllib3<2" requests pytrends pandas
       - name: Collect live provider data
         run: python collector.py --output live_data.json
       - name: Show collector diagnostics
