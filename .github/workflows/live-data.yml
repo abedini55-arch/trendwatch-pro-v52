@@ -18,7 +18,14 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install --disable-pip-version-check requests pytrends pandas
-      - run: python collector.py --output live_data.json
+      - name: Collect live provider data
+        run: python collector.py --output live_data.json
+      - name: Show collector diagnostics
+        if: always()
+        run: |
+          echo "===== live_data.json ====="
+          cat live_data.json
+          echo "===== end live_data.json ====="
       - name: Commit live data
         run: |
           git config user.name "TrendWatch Live Collector"
