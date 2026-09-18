@@ -1,0 +1,10 @@
+{
+  "generated_at": null,
+  "google_trends": {},
+  "money": null,
+  "errors": {
+    "google": "Collector has not run yet",
+    "money": "Collector has not run yet"
+  },
+  "all_real": true
+}
