@@ -1,14 +1,13 @@
 """
-TrendWatch Pro - Independent Live Data Collector
-Collects real TSETMC market flows and Google Trends data.
-No demo, forecast, or synthetic values are generated.
+TrendWatch Pro live collector.
+Only real provider responses are written. Failed providers remain unavailable.
 """
-import os, time, math, datetime as dt
+import argparse, datetime as dt, json, math, time
 import requests
 
 TSET = "https://cdn.tsetmc.com"
 UA = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.36",
     "Accept": "application/json,text/plain,*/*",
     "Referer": "https://www.tsetmc.com/",
 }
@@ -17,9 +16,12 @@ def tget(path, params=None):
     last = None
     for attempt in range(4):
         try:
-            r = requests.get(TSET + path, params=params, headers=UA, timeout=(10,35))
+            r = requests.get(TSET + path, params=params, headers=UA, timeout=(8,20))
             r.raise_for_status()
-            return r.json()
+            data = r.json()
+            if not isinstance(data, dict):
+                raise RuntimeError("TSETMC returned non-object JSON")
+            return data
         except Exception as e:
             last = e
             if attempt < 3:
@@ -37,18 +39,15 @@ def collect_tsetmc():
     rows = mw.get("marketwatch", []) or []
     if not rows:
         raise RuntimeError("TSETMC MarketWatch returned no rows")
-
     prices = {
         str(x.get("insCode") or x.get("inscode")):
         float(x.get("pClosing") or x.get("pl") or x.get("pDrCotVal") or 0)
         for x in rows if x.get("insCode") or x.get("inscode")
     }
-
     ct = tget("/api/ClientType/GetClientTypeAll")
     clients = ct.get("clientTypeAllDto", []) or []
     if not clients:
         raise RuntimeError("TSETMC ClientTypeAll returned no rows")
-
     real = legal = 0.0
     for x in clients:
         code = str(x.get("insCode") or x.get("inscode") or x.get("ins_code") or "")
@@ -61,23 +60,15 @@ def collect_tsetmc():
         sell_n = float(x.get("sell_N_Volume") or x.get("l_sell_volume") or 0)
         real += (buy_i - sell_i) * price
         legal += (buy_n - sell_n) * price
-
     if real == 0 and legal == 0:
         raise RuntimeError("TSETMC flow calculation returned zero")
-
-    return {
-        "date": dt.date.today().isoformat(),
-        "real_value": real,
-        "legal_value": legal,
-        "source": "TSETMC",
-        "real": True
-    }
+    return {"date": dt.date.today().isoformat(), "real_value": real, "legal_value": legal, "source":"TSETMC", "real":True}
 
 def collect_google():
     from pytrends.request import TrendReq
-    pt = TrendReq(hl="fa-IR", tz=210, timeout=(10,30), retries=2, backoff_factor=0.5)
+    pt = TrendReq(hl="fa-IR", tz=210, timeout=(8,20), retries=1, backoff_factor=0.5)
     result = {}
-    for term in ["بورس", "طلا", "دلار"]:
+    for term in ["بورس","طلا","دلار"]:
         pt.build_payload([term], timeframe="today 12-m", geo="IR", gprop="")
         df = pt.interest_over_time()
         arr = []
@@ -90,7 +81,29 @@ def collect_google():
         result[term] = arr
     return result
 
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--output", default="live_data.json")
+    args = ap.parse_args()
+    out = {
+        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "google_trends": {},
+        "money": None,
+        "errors": {},
+        "all_real": True
+    }
+    try:
+        out["google_trends"] = collect_google()
+    except Exception as e:
+        out["errors"]["google"] = str(e)[:500]
+    try:
+        out["money"] = collect_tsetmc()
+    except Exception as e:
+        out["errors"]["money"] = str(e)[:500]
+    with open(args.output, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=2)
+    if not out["google_trends"] and not out["money"]:
+        raise SystemExit("No provider returned real data; live_data.json records the errors.")
+
 if __name__ == "__main__":
-    print("TrendWatch Pro Collector")
-    print("TSETMC:", collect_tsetmc())
-    print("Google Trends:", {k: len(v) for k,v in collect_google().items()})
+    main()
