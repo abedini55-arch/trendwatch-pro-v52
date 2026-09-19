@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T17:34:18.943768+00:00",
+  "generated_at": "2026-09-19T18:07:42.223433+00:00",
   "google_trends": {
     "بورس": [
       {
@@ -9,7 +9,7 @@
       },
       {
         "date": "2025-09-21",
-        "value": 66,
+        "value": 67,
         "real": true
       },
       {
@@ -19,7 +19,7 @@
       },
       {
         "date": "2025-10-05",
-        "value": 67,
+        "value": 68,
         "real": true
       },
       {
@@ -49,7 +49,7 @@
       },
       {
         "date": "2025-11-16",
-        "value": 58,
+        "value": 59,
         "real": true
       },
       {
@@ -74,7 +74,7 @@
       },
       {
         "date": "2025-12-21",
-        "value": 94,
+        "value": 95,
         "real": true
       },
       {
@@ -94,7 +94,7 @@
       },
       {
         "date": "2026-01-18",
-        "value": 72,
+        "value": 73,
         "real": true
       },
       {
@@ -149,7 +149,7 @@
       },
       {
         "date": "2026-04-05",
-        "value": 74,
+        "value": 75,
         "real": true
       },
       {
@@ -189,17 +189,17 @@
       },
       {
         "date": "2026-05-31",
-        "value": 70,
+        "value": 71,
         "real": true
       },
       {
         "date": "2026-06-07",
-        "value": 74,
+        "value": 75,
         "real": true
       },
       {
         "date": "2026-06-14",
-        "value": 85,
+        "value": 86,
         "real": true
       },
       {
@@ -209,7 +209,7 @@
       },
       {
         "date": "2026-06-28",
-        "value": 65,
+        "value": 66,
         "real": true
       },
       {
@@ -249,12 +249,12 @@
       },
       {
         "date": "2026-08-23",
-        "value": 84,
+        "value": 85,
         "real": true
       },
       {
         "date": "2026-08-30",
-        "value": 83,
+        "value": 84,
         "real": true
       },
       {
@@ -264,7 +264,7 @@
       },
       {
         "date": "2026-09-13",
-        "value": 87,
+        "value": 88,
         "real": true
       }
     ],
@@ -531,7 +531,7 @@
       },
       {
         "date": "2026-09-13",
-        "value": 44,
+        "value": 45,
         "real": true
       }
     ],
@@ -793,7 +793,7 @@
       },
       {
         "date": "2026-09-06",
-        "value": 64,
+        "value": 61,
         "real": true
       },
       {
@@ -805,7 +805,7 @@
   },
   "money": null,
   "errors": {
-    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: 500 Server Error: Internal Server Error for url: https://cdn.tsetmc.com/api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f589931f080>: Failed to establish a new connection: [Errno -2] Name or service not "
+    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: 500 Server Error: Internal Server Error for url: https://cdn.tsetmc.com/api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f60a8f8bad0>: Failed to establish a new connection: [Errno -2] Name or service not "
   },
   "all_real": true
 }
