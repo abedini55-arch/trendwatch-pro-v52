@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T18:38:16.729104+00:00",
+  "generated_at": "2026-09-19T19:05:43.792117+00:00",
   "google_trends": {
     "بورس": [
       {
@@ -9,7 +9,7 @@
       },
       {
         "date": "2025-09-21",
-        "value": 67,
+        "value": 66,
         "real": true
       },
       {
@@ -19,7 +19,7 @@
       },
       {
         "date": "2025-10-05",
-        "value": 68,
+        "value": 67,
         "real": true
       },
       {
@@ -74,7 +74,7 @@
       },
       {
         "date": "2025-12-21",
-        "value": 95,
+        "value": 94,
         "real": true
       },
       {
@@ -94,7 +94,7 @@
       },
       {
         "date": "2026-01-18",
-        "value": 73,
+        "value": 72,
         "real": true
       },
       {
@@ -149,7 +149,7 @@
       },
       {
         "date": "2026-04-05",
-        "value": 75,
+        "value": 74,
         "real": true
       },
       {
@@ -194,7 +194,7 @@
       },
       {
         "date": "2026-06-07",
-        "value": 75,
+        "value": 74,
         "real": true
       },
       {
@@ -209,7 +209,7 @@
       },
       {
         "date": "2026-06-28",
-        "value": 66,
+        "value": 65,
         "real": true
       },
       {
@@ -249,12 +249,12 @@
       },
       {
         "date": "2026-08-23",
-        "value": 85,
+        "value": 84,
         "real": true
       },
       {
         "date": "2026-08-30",
-        "value": 84,
+        "value": 83,
         "real": true
       },
       {
@@ -264,7 +264,7 @@
       },
       {
         "date": "2026-09-13",
-        "value": 88,
+        "value": 87,
         "real": true
       }
     ],
@@ -805,7 +805,7 @@
   },
   "money": null,
   "errors": {
-    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: 500 Server Error: Internal Server Error for url: https://cdn.tsetmc.com/api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f069f1fad80>: Failed to establish a new connection: [Errno -2] Name or service not "
+    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: 500 Server Error: Internal Server Error for url: https://cdn.tsetmc.com/api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb5ddf87cb0>: Failed to establish a new connection: [Errno -2] Name or service not "
   },
   "all_real": true
 }
