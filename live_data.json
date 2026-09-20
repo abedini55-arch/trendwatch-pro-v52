@@ -1,270 +1,270 @@
 {
-  "generated_at": "2026-09-20T05:06:36.303003+00:00",
+  "generated_at": "2026-09-20T05:36:45.076345+00:00",
   "google_trends": {
     "بورس": [
       {
         "date": "2025-09-14",
-        "value": 59,
+        "value": 47,
         "real": true
       },
       {
         "date": "2025-09-21",
-        "value": 69,
+        "value": 55,
         "real": true
       },
       {
         "date": "2025-09-28",
-        "value": 66,
+        "value": 53,
         "real": true
       },
       {
         "date": "2025-10-05",
-        "value": 65,
+        "value": 52,
         "real": true
       },
       {
         "date": "2025-10-12",
-        "value": 64,
+        "value": 51,
         "real": true
       },
       {
         "date": "2025-10-19",
-        "value": 60,
-        "real": true
-      },
-      {
-        "date": "2025-10-26",
-        "value": 67,
-        "real": true
-      },
-      {
-        "date": "2025-11-02",
-        "value": 60,
-        "real": true
-      },
-      {
-        "date": "2025-11-09",
-        "value": 63,
-        "real": true
-      },
-      {
-        "date": "2025-11-16",
-        "value": 54,
-        "real": true
-      },
-      {
-        "date": "2025-11-23",
-        "value": 50,
-        "real": true
-      },
-      {
-        "date": "2025-11-30",
-        "value": 65,
-        "real": true
-      },
-      {
-        "date": "2025-12-07",
-        "value": 70,
-        "real": true
-      },
-      {
-        "date": "2025-12-14",
-        "value": 77,
-        "real": true
-      },
-      {
-        "date": "2025-12-21",
-        "value": 92,
-        "real": true
-      },
-      {
-        "date": "2025-12-28",
-        "value": 79,
-        "real": true
-      },
-      {
-        "date": "2026-01-04",
-        "value": 81,
-        "real": true
-      },
-      {
-        "date": "2026-01-11",
-        "value": 31,
-        "real": true
-      },
-      {
-        "date": "2026-01-18",
-        "value": 74,
-        "real": true
-      },
-      {
-        "date": "2026-01-25",
-        "value": 76,
-        "real": true
-      },
-      {
-        "date": "2026-02-01",
-        "value": 56,
-        "real": true
-      },
-      {
-        "date": "2026-02-08",
-        "value": 57,
-        "real": true
-      },
-      {
-        "date": "2026-02-15",
-        "value": 58,
-        "real": true
-      },
-      {
-        "date": "2026-02-22",
-        "value": 57,
-        "real": true
-      },
-      {
-        "date": "2026-03-01",
-        "value": 27,
-        "real": true
-      },
-      {
-        "date": "2026-03-08",
-        "value": 67,
-        "real": true
-      },
-      {
-        "date": "2026-03-15",
-        "value": 27,
-        "real": true
-      },
-      {
-        "date": "2026-03-22",
-        "value": 38,
-        "real": true
-      },
-      {
-        "date": "2026-03-29",
-        "value": 36,
-        "real": true
-      },
-      {
-        "date": "2026-04-05",
-        "value": 73,
-        "real": true
-      },
-      {
-        "date": "2026-04-12",
-        "value": 45,
-        "real": true
-      },
-      {
-        "date": "2026-04-19",
-        "value": 40,
-        "real": true
-      },
-      {
-        "date": "2026-04-26",
-        "value": 49,
-        "real": true
-      },
-      {
-        "date": "2026-05-03",
         "value": 48,
         "real": true
       },
       {
-        "date": "2026-05-10",
-        "value": 54,
+        "date": "2025-10-26",
+        "value": 53,
         "real": true
       },
       {
-        "date": "2026-05-17",
-        "value": 80,
+        "date": "2025-11-02",
+        "value": 48,
         "real": true
       },
       {
-        "date": "2026-05-24",
-        "value": 69,
+        "date": "2025-11-09",
+        "value": 50,
         "real": true
       },
       {
-        "date": "2026-05-31",
-        "value": 69,
+        "date": "2025-11-16",
+        "value": 43,
         "real": true
       },
       {
-        "date": "2026-06-07",
-        "value": 71,
+        "date": "2025-11-23",
+        "value": 40,
         "real": true
       },
       {
-        "date": "2026-06-14",
-        "value": 87,
+        "date": "2025-11-30",
+        "value": 52,
         "real": true
       },
       {
-        "date": "2026-06-21",
-        "value": 58,
+        "date": "2025-12-07",
+        "value": 56,
         "real": true
       },
       {
-        "date": "2026-06-28",
-        "value": 65,
+        "date": "2025-12-14",
+        "value": 61,
         "real": true
       },
       {
-        "date": "2026-07-05",
-        "value": 54,
-        "real": true
-      },
-      {
-        "date": "2026-07-12",
-        "value": 59,
-        "real": true
-      },
-      {
-        "date": "2026-07-19",
-        "value": 63,
-        "real": true
-      },
-      {
-        "date": "2026-07-26",
-        "value": 58,
-        "real": true
-      },
-      {
-        "date": "2026-08-02",
-        "value": 67,
-        "real": true
-      },
-      {
-        "date": "2026-08-09",
-        "value": 64,
-        "real": true
-      },
-      {
-        "date": "2026-08-16",
+        "date": "2025-12-21",
         "value": 74,
         "real": true
       },
       {
+        "date": "2025-12-28",
+        "value": 63,
+        "real": true
+      },
+      {
+        "date": "2026-01-04",
+        "value": 65,
+        "real": true
+      },
+      {
+        "date": "2026-01-11",
+        "value": 25,
+        "real": true
+      },
+      {
+        "date": "2026-01-18",
+        "value": 59,
+        "real": true
+      },
+      {
+        "date": "2026-01-25",
+        "value": 61,
+        "real": true
+      },
+      {
+        "date": "2026-02-01",
+        "value": 45,
+        "real": true
+      },
+      {
+        "date": "2026-02-08",
+        "value": 45,
+        "real": true
+      },
+      {
+        "date": "2026-02-15",
+        "value": 46,
+        "real": true
+      },
+      {
+        "date": "2026-02-22",
+        "value": 46,
+        "real": true
+      },
+      {
+        "date": "2026-03-01",
+        "value": 22,
+        "real": true
+      },
+      {
+        "date": "2026-03-08",
+        "value": 53,
+        "real": true
+      },
+      {
+        "date": "2026-03-15",
+        "value": 21,
+        "real": true
+      },
+      {
+        "date": "2026-03-22",
+        "value": 30,
+        "real": true
+      },
+      {
+        "date": "2026-03-29",
+        "value": 29,
+        "real": true
+      },
+      {
+        "date": "2026-04-05",
+        "value": 58,
+        "real": true
+      },
+      {
+        "date": "2026-04-12",
+        "value": 36,
+        "real": true
+      },
+      {
+        "date": "2026-04-19",
+        "value": 31,
+        "real": true
+      },
+      {
+        "date": "2026-04-26",
+        "value": 39,
+        "real": true
+      },
+      {
+        "date": "2026-05-03",
+        "value": 38,
+        "real": true
+      },
+      {
+        "date": "2026-05-10",
+        "value": 43,
+        "real": true
+      },
+      {
+        "date": "2026-05-17",
+        "value": 63,
+        "real": true
+      },
+      {
+        "date": "2026-05-24",
+        "value": 54,
+        "real": true
+      },
+      {
+        "date": "2026-05-31",
+        "value": 55,
+        "real": true
+      },
+      {
+        "date": "2026-06-07",
+        "value": 57,
+        "real": true
+      },
+      {
+        "date": "2026-06-14",
+        "value": 69,
+        "real": true
+      },
+      {
+        "date": "2026-06-21",
+        "value": 46,
+        "real": true
+      },
+      {
+        "date": "2026-06-28",
+        "value": 51,
+        "real": true
+      },
+      {
+        "date": "2026-07-05",
+        "value": 43,
+        "real": true
+      },
+      {
+        "date": "2026-07-12",
+        "value": 47,
+        "real": true
+      },
+      {
+        "date": "2026-07-19",
+        "value": 50,
+        "real": true
+      },
+      {
+        "date": "2026-07-26",
+        "value": 46,
+        "real": true
+      },
+      {
+        "date": "2026-08-02",
+        "value": 53,
+        "real": true
+      },
+      {
+        "date": "2026-08-09",
+        "value": 51,
+        "real": true
+      },
+      {
+        "date": "2026-08-16",
+        "value": 59,
+        "real": true
+      },
+      {
         "date": "2026-08-23",
-        "value": 79,
+        "value": 63,
         "real": true
       },
       {
         "date": "2026-08-30",
-        "value": 84,
+        "value": 66,
         "real": true
       },
       {
         "date": "2026-09-06",
-        "value": 100,
+        "value": 80,
         "real": true
       },
       {
         "date": "2026-09-13",
-        "value": 87,
+        "value": 69,
         "real": true
       },
       {
@@ -541,7 +541,7 @@
       },
       {
         "date": "2026-09-20",
-        "value": 44,
+        "value": 46,
         "real": true
       }
     ],
@@ -820,7 +820,7 @@
   },
   "money": null,
   "errors": {
-    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f5063281ac0>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
+    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fbc19100ce0>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
   },
   "all_real": true
 }
