@@ -149,6 +149,28 @@ def dashboard_data(range: str='12m', days:int=30):
         'generated_at':dt.datetime.now(dt.timezone.utc).isoformat()
     }
 
+
+RELAY_BASE = os.getenv('TSETMC_RELAY_URL', '').rstrip('/')
+
+@APP.get('/api/history-by-symbol')
+def history_by_symbol(symbol: str = ''):
+    symbol = symbol.strip()
+    if not symbol:
+        return JSONResponse({'ok': False, 'error': 'symbol is required'}, status_code=400)
+    if not RELAY_BASE:
+        return JSONResponse({'ok': False, 'error': 'TSETMC_RELAY_URL is not configured'}, status_code=503)
+    try:
+        r = requests.get(
+            RELAY_BASE + '/api/history-by-symbol',
+            params={'symbol': symbol},
+            timeout=(5, 45),
+        )
+        r.raise_for_status()
+        data = r.json()
+        return JSONResponse(data)
+    except Exception as e:
+        return JSONResponse({'ok': False, 'error': str(e)}, status_code=502)
+
 @APP.get('/')
 def index():
     return FileResponse(BASE/'TrendWatch_Pro_Mobile_v5_2.html')
