@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T06:44:32.047802+00:00",
+  "generated_at": "2026-09-21T07:08:20.975383+00:00",
   "google_trends": {
     "بورس": [
       {
@@ -9,7 +9,7 @@
       },
       {
         "date": "2025-09-28",
-        "value": 54,
+        "value": 55,
         "real": true
       },
       {
@@ -24,12 +24,12 @@
       },
       {
         "date": "2025-10-19",
-        "value": 47,
+        "value": 48,
         "real": true
       },
       {
         "date": "2025-10-26",
-        "value": 50,
+        "value": 51,
         "real": true
       },
       {
@@ -39,17 +39,17 @@
       },
       {
         "date": "2025-11-09",
-        "value": 49,
+        "value": 50,
         "real": true
       },
       {
         "date": "2025-11-16",
-        "value": 46,
+        "value": 47,
         "real": true
       },
       {
         "date": "2025-11-23",
-        "value": 42,
+        "value": 43,
         "real": true
       },
       {
@@ -69,12 +69,12 @@
       },
       {
         "date": "2025-12-21",
-        "value": 73,
+        "value": 74,
         "real": true
       },
       {
         "date": "2025-12-28",
-        "value": 62,
+        "value": 63,
         "real": true
       },
       {
@@ -89,7 +89,7 @@
       },
       {
         "date": "2026-01-18",
-        "value": 61,
+        "value": 62,
         "real": true
       },
       {
@@ -104,27 +104,27 @@
       },
       {
         "date": "2026-02-08",
-        "value": 40,
+        "value": 41,
         "real": true
       },
       {
         "date": "2026-02-15",
-        "value": 47,
+        "value": 48,
         "real": true
       },
       {
         "date": "2026-02-22",
-        "value": 45,
+        "value": 46,
         "real": true
       },
       {
         "date": "2026-03-01",
-        "value": 37,
+        "value": 38,
         "real": true
       },
       {
         "date": "2026-03-08",
-        "value": 45,
+        "value": 46,
         "real": true
       },
       {
@@ -139,7 +139,7 @@
       },
       {
         "date": "2026-03-29",
-        "value": 27,
+        "value": 28,
         "real": true
       },
       {
@@ -154,12 +154,12 @@
       },
       {
         "date": "2026-04-19",
-        "value": 31,
+        "value": 32,
         "real": true
       },
       {
         "date": "2026-04-26",
-        "value": 41,
+        "value": 42,
         "real": true
       },
       {
@@ -174,7 +174,7 @@
       },
       {
         "date": "2026-05-17",
-        "value": 62,
+        "value": 63,
         "real": true
       },
       {
@@ -184,7 +184,7 @@
       },
       {
         "date": "2026-05-31",
-        "value": 55,
+        "value": 56,
         "real": true
       },
       {
@@ -194,12 +194,12 @@
       },
       {
         "date": "2026-06-14",
-        "value": 68,
+        "value": 69,
         "real": true
       },
       {
         "date": "2026-06-21",
-        "value": 52,
+        "value": 53,
         "real": true
       },
       {
@@ -209,7 +209,7 @@
       },
       {
         "date": "2026-07-05",
-        "value": 41,
+        "value": 42,
         "real": true
       },
       {
@@ -219,7 +219,7 @@
       },
       {
         "date": "2026-07-19",
-        "value": 46,
+        "value": 47,
         "real": true
       },
       {
@@ -229,22 +229,22 @@
       },
       {
         "date": "2026-08-02",
-        "value": 47,
+        "value": 48,
         "real": true
       },
       {
         "date": "2026-08-09",
-        "value": 49,
+        "value": 50,
         "real": true
       },
       {
         "date": "2026-08-16",
-        "value": 60,
+        "value": 61,
         "real": true
       },
       {
         "date": "2026-08-23",
-        "value": 65,
+        "value": 66,
         "real": true
       },
       {
@@ -259,7 +259,7 @@
       },
       {
         "date": "2026-09-13",
-        "value": 69,
+        "value": 70,
         "real": true
       },
       {
@@ -798,14 +798,14 @@
       },
       {
         "date": "2026-09-20",
-        "value": 43,
+        "value": 42,
         "real": true
       }
     ]
   },
   "money": null,
   "errors": {
-    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fafd2be44a0>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
+    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fdeb2c53620>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
   },
   "all_real": true
 }
