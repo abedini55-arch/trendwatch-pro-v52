@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T22:36:55.818479+00:00",
+  "generated_at": "2026-09-22T23:06:25.389103+00:00",
   "google_trends": {
     "بورس": [
       {
@@ -24,7 +24,7 @@
       },
       {
         "date": "2025-10-19",
-        "value": 61,
+        "value": 60,
         "real": true
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "date": "2025-12-21",
-        "value": 88,
+        "value": 87,
         "real": true
       },
       {
@@ -114,7 +114,7 @@
       },
       {
         "date": "2026-02-22",
-        "value": 53,
+        "value": 52,
         "real": true
       },
       {
@@ -139,7 +139,7 @@
       },
       {
         "date": "2026-03-29",
-        "value": 34,
+        "value": 33,
         "real": true
       },
       {
@@ -224,7 +224,7 @@
       },
       {
         "date": "2026-07-26",
-        "value": 61,
+        "value": 60,
         "real": true
       },
       {
@@ -234,7 +234,7 @@
       },
       {
         "date": "2026-08-09",
-        "value": 61,
+        "value": 60,
         "real": true
       },
       {
@@ -249,22 +249,22 @@
       },
       {
         "date": "2026-08-30",
-        "value": 83,
+        "value": 82,
         "real": true
       },
       {
         "date": "2026-09-06",
-        "value": 99,
+        "value": 100,
         "real": true
       },
       {
         "date": "2026-09-13",
-        "value": 83,
+        "value": 82,
         "real": true
       },
       {
         "date": "2026-09-20",
-        "value": 100,
+        "value": 94,
         "real": true
       }
     ],
@@ -521,7 +521,7 @@
       },
       {
         "date": "2026-09-06",
-        "value": 60,
+        "value": 58,
         "real": true
       },
       {
@@ -788,7 +788,7 @@
       },
       {
         "date": "2026-09-06",
-        "value": 62,
+        "value": 65,
         "real": true
       },
       {
@@ -798,14 +798,14 @@
       },
       {
         "date": "2026-09-20",
-        "value": 42,
+        "value": 44,
         "real": true
       }
     ]
   },
   "money": null,
   "errors": {
-    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f30dfa27620>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
+    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f7038a82060>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
   },
   "all_real": true
 }
