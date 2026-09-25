@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T02:06:35.334458+00:00",
+  "generated_at": "2026-09-25T02:37:46.052382+00:00",
   "google_trends": {
     "بورس": [
       {
@@ -805,7 +805,7 @@
   },
   "money": null,
   "errors": {
-    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f5bd8871ee0>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
+    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fae2f035610>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
   },
   "all_real": true
 }
