@@ -1,60 +1,60 @@
 {
-  "generated_at": "2026-10-16T20:14:48.396443+00:00",
+  "generated_at": "2026-10-16T20:55:49.377115+00:00",
   "google_trends": {
     "بورس": [
       {
         "date": "2025-10-12",
-        "value": 63,
-        "real": true
-      },
-      {
-        "date": "2025-10-19",
-        "value": 66,
-        "real": true
-      },
-      {
-        "date": "2025-10-26",
-        "value": 64,
-        "real": true
-      },
-      {
-        "date": "2025-11-02",
         "value": 62,
         "real": true
       },
       {
-        "date": "2025-11-09",
-        "value": 61,
-        "real": true
-      },
-      {
-        "date": "2025-11-16",
-        "value": 61,
-        "real": true
-      },
-      {
-        "date": "2025-11-23",
-        "value": 54,
-        "real": true
-      },
-      {
-        "date": "2025-11-30",
+        "date": "2025-10-19",
         "value": 64,
         "real": true
       },
       {
+        "date": "2025-10-26",
+        "value": 62,
+        "real": true
+      },
+      {
+        "date": "2025-11-02",
+        "value": 61,
+        "real": true
+      },
+      {
+        "date": "2025-11-09",
+        "value": 60,
+        "real": true
+      },
+      {
+        "date": "2025-11-16",
+        "value": 56,
+        "real": true
+      },
+      {
+        "date": "2025-11-23",
+        "value": 50,
+        "real": true
+      },
+      {
+        "date": "2025-11-30",
+        "value": 61,
+        "real": true
+      },
+      {
         "date": "2025-12-07",
-        "value": 70,
+        "value": 68,
         "real": true
       },
       {
         "date": "2025-12-14",
-        "value": 82,
+        "value": 79,
         "real": true
       },
       {
         "date": "2025-12-21",
-        "value": 95,
+        "value": 88,
         "real": true
       },
       {
@@ -64,7 +64,7 @@
       },
       {
         "date": "2026-01-04",
-        "value": 81,
+        "value": 84,
         "real": true
       },
       {
@@ -74,72 +74,72 @@
       },
       {
         "date": "2026-01-18",
-        "value": 76,
+        "value": 65,
         "real": true
       },
       {
         "date": "2026-01-25",
-        "value": 72,
+        "value": 71,
         "real": true
       },
       {
         "date": "2026-02-01",
-        "value": 55,
+        "value": 51,
         "real": true
       },
       {
         "date": "2026-02-08",
-        "value": 55,
+        "value": 53,
         "real": true
       },
       {
         "date": "2026-02-15",
-        "value": 59,
+        "value": 58,
         "real": true
       },
       {
         "date": "2026-02-22",
-        "value": 56,
+        "value": 57,
         "real": true
       },
       {
         "date": "2026-03-01",
-        "value": 31,
+        "value": 21,
         "real": true
       },
       {
         "date": "2026-03-08",
-        "value": 59,
+        "value": 61,
         "real": true
       },
       {
         "date": "2026-03-15",
-        "value": 27,
+        "value": 0,
         "real": true
       },
       {
         "date": "2026-03-22",
-        "value": 38,
+        "value": 36,
         "real": true
       },
       {
         "date": "2026-03-29",
-        "value": 35,
+        "value": 34,
         "real": true
       },
       {
         "date": "2026-04-05",
-        "value": 75,
+        "value": 68,
         "real": true
       },
       {
         "date": "2026-04-12",
-        "value": 45,
+        "value": 44,
         "real": true
       },
       {
         "date": "2026-04-19",
-        "value": 42,
+        "value": 39,
         "real": true
       },
       {
@@ -149,7 +149,7 @@
       },
       {
         "date": "2026-05-03",
-        "value": 51,
+        "value": 46,
         "real": true
       },
       {
@@ -159,27 +159,27 @@
       },
       {
         "date": "2026-05-17",
-        "value": 77,
+        "value": 75,
         "real": true
       },
       {
         "date": "2026-05-24",
-        "value": 69,
+        "value": 66,
         "real": true
       },
       {
         "date": "2026-05-31",
-        "value": 70,
+        "value": 66,
         "real": true
       },
       {
         "date": "2026-06-07",
-        "value": 73,
+        "value": 69,
         "real": true
       },
       {
         "date": "2026-06-14",
-        "value": 88,
+        "value": 85,
         "real": true
       },
       {
@@ -189,22 +189,22 @@
       },
       {
         "date": "2026-06-28",
-        "value": 68,
+        "value": 66,
         "real": true
       },
       {
         "date": "2026-07-05",
-        "value": 53,
+        "value": 51,
         "real": true
       },
       {
         "date": "2026-07-12",
-        "value": 57,
+        "value": 60,
         "real": true
       },
       {
         "date": "2026-07-19",
-        "value": 57,
+        "value": 58,
         "real": true
       },
       {
@@ -214,27 +214,27 @@
       },
       {
         "date": "2026-08-02",
-        "value": 63,
+        "value": 61,
         "real": true
       },
       {
         "date": "2026-08-09",
-        "value": 63,
+        "value": 61,
         "real": true
       },
       {
         "date": "2026-08-16",
-        "value": 74,
+        "value": 70,
         "real": true
       },
       {
         "date": "2026-08-23",
-        "value": 81,
+        "value": 85,
         "real": true
       },
       {
         "date": "2026-08-30",
-        "value": 86,
+        "value": 80,
         "real": true
       },
       {
@@ -244,49 +244,49 @@
       },
       {
         "date": "2026-09-13",
-        "value": 75,
+        "value": 73,
         "real": true
       },
       {
         "date": "2026-09-20",
-        "value": 78,
+        "value": 69,
         "real": true
       },
       {
         "date": "2026-09-27",
-        "value": 80,
+        "value": 78,
         "real": true
       },
       {
         "date": "2026-10-04",
-        "value": 91,
+        "value": 86,
         "real": true
       },
       {
         "date": "2026-10-11",
-        "value": 82,
+        "value": 78,
         "real": true
       }
     ],
     "طلا": [
       {
         "date": "2025-10-12",
-        "value": 54,
+        "value": 58,
         "real": true
       },
       {
         "date": "2025-10-19",
-        "value": 48,
+        "value": 50,
         "real": true
       },
       {
         "date": "2025-10-26",
-        "value": 47,
+        "value": 48,
         "real": true
       },
       {
         "date": "2025-11-02",
-        "value": 37,
+        "value": 39,
         "real": true
       },
       {
@@ -296,42 +296,42 @@
       },
       {
         "date": "2025-11-16",
-        "value": 43,
+        "value": 49,
         "real": true
       },
       {
         "date": "2025-11-23",
-        "value": 38,
+        "value": 40,
         "real": true
       },
       {
         "date": "2025-11-30",
-        "value": 50,
+        "value": 53,
         "real": true
       },
       {
         "date": "2025-12-07",
-        "value": 54,
+        "value": 57,
         "real": true
       },
       {
         "date": "2025-12-14",
-        "value": 56,
+        "value": 59,
         "real": true
       },
       {
         "date": "2025-12-21",
-        "value": 61,
+        "value": 64,
         "real": true
       },
       {
         "date": "2025-12-28",
-        "value": 82,
+        "value": 96,
         "real": true
       },
       {
         "date": "2026-01-04",
-        "value": 82,
+        "value": 84,
         "real": true
       },
       {
@@ -341,7 +341,7 @@
       },
       {
         "date": "2026-01-18",
-        "value": 80,
+        "value": 85,
         "real": true
       },
       {
@@ -351,32 +351,32 @@
       },
       {
         "date": "2026-02-01",
-        "value": 82,
+        "value": 88,
         "real": true
       },
       {
         "date": "2026-02-08",
-        "value": 64,
+        "value": 67,
         "real": true
       },
       {
         "date": "2026-02-15",
-        "value": 60,
+        "value": 63,
         "real": true
       },
       {
         "date": "2026-02-22",
-        "value": 57,
+        "value": 59,
         "real": true
       },
       {
         "date": "2026-03-01",
-        "value": 35,
+        "value": 36,
         "real": true
       },
       {
         "date": "2026-03-08",
-        "value": 23,
+        "value": 24,
         "real": true
       },
       {
@@ -386,7 +386,7 @@
       },
       {
         "date": "2026-03-22",
-        "value": 8,
+        "value": 9,
         "real": true
       },
       {
@@ -401,87 +401,87 @@
       },
       {
         "date": "2026-04-12",
-        "value": 55,
+        "value": 59,
         "real": true
       },
       {
         "date": "2026-04-19",
-        "value": 38,
+        "value": 39,
         "real": true
       },
       {
         "date": "2026-04-26",
-        "value": 66,
+        "value": 70,
         "real": true
       },
       {
         "date": "2026-05-03",
-        "value": 65,
-        "real": true
-      },
-      {
-        "date": "2026-05-10",
-        "value": 51,
-        "real": true
-      },
-      {
-        "date": "2026-05-17",
-        "value": 48,
-        "real": true
-      },
-      {
-        "date": "2026-05-24",
-        "value": 57,
-        "real": true
-      },
-      {
-        "date": "2026-05-31",
-        "value": 34,
-        "real": true
-      },
-      {
-        "date": "2026-06-07",
-        "value": 41,
-        "real": true
-      },
-      {
-        "date": "2026-06-14",
         "value": 68,
         "real": true
       },
       {
+        "date": "2026-05-10",
+        "value": 53,
+        "real": true
+      },
+      {
+        "date": "2026-05-17",
+        "value": 52,
+        "real": true
+      },
+      {
+        "date": "2026-05-24",
+        "value": 56,
+        "real": true
+      },
+      {
+        "date": "2026-05-31",
+        "value": 36,
+        "real": true
+      },
+      {
+        "date": "2026-06-07",
+        "value": 43,
+        "real": true
+      },
+      {
+        "date": "2026-06-14",
+        "value": 72,
+        "real": true
+      },
+      {
         "date": "2026-06-21",
-        "value": 40,
+        "value": 43,
         "real": true
       },
       {
         "date": "2026-06-28",
-        "value": 49,
+        "value": 52,
         "real": true
       },
       {
         "date": "2026-07-05",
-        "value": 40,
-        "real": true
-      },
-      {
-        "date": "2026-07-12",
-        "value": 42,
-        "real": true
-      },
-      {
-        "date": "2026-07-19",
         "value": 41,
         "real": true
       },
       {
+        "date": "2026-07-12",
+        "value": 44,
+        "real": true
+      },
+      {
+        "date": "2026-07-19",
+        "value": 44,
+        "real": true
+      },
+      {
         "date": "2026-07-26",
-        "value": 40,
+        "value": 42,
         "real": true
       },
       {
         "date": "2026-08-02",
-        "value": 37,
+        "value": 38,
         "real": true
       },
       {
@@ -491,104 +491,104 @@
       },
       {
         "date": "2026-08-16",
-        "value": 45,
+        "value": 48,
         "real": true
       },
       {
         "date": "2026-08-23",
-        "value": 65,
+        "value": 64,
         "real": true
       },
       {
         "date": "2026-08-30",
-        "value": 58,
+        "value": 61,
         "real": true
       },
       {
         "date": "2026-09-06",
-        "value": 56,
+        "value": 60,
         "real": true
       },
       {
         "date": "2026-09-13",
-        "value": 44,
+        "value": 46,
         "real": true
       },
       {
         "date": "2026-09-20",
-        "value": 43,
+        "value": 44,
         "real": true
       },
       {
         "date": "2026-09-27",
-        "value": 54,
+        "value": 55,
         "real": true
       },
       {
         "date": "2026-10-04",
-        "value": 47,
+        "value": 49,
         "real": true
       },
       {
         "date": "2026-10-11",
-        "value": 39,
+        "value": 41,
         "real": true
       }
     ],
     "دلار": [
       {
         "date": "2025-10-12",
-        "value": 49,
+        "value": 47,
         "real": true
       },
       {
         "date": "2025-10-19",
-        "value": 43,
+        "value": 42,
         "real": true
       },
       {
         "date": "2025-10-26",
-        "value": 35,
+        "value": 34,
         "real": true
       },
       {
         "date": "2025-11-02",
-        "value": 28,
+        "value": 27,
         "real": true
       },
       {
         "date": "2025-11-09",
-        "value": 35,
+        "value": 34,
         "real": true
       },
       {
         "date": "2025-11-16",
-        "value": 32,
+        "value": 31,
         "real": true
       },
       {
         "date": "2025-11-23",
-        "value": 29,
+        "value": 27,
         "real": true
       },
       {
         "date": "2025-11-30",
-        "value": 45,
+        "value": 42,
         "real": true
       },
       {
         "date": "2025-12-07",
-        "value": 52,
+        "value": 49,
         "real": true
       },
       {
         "date": "2025-12-14",
-        "value": 56,
+        "value": 52,
         "real": true
       },
       {
         "date": "2025-12-21",
-        "value": 53,
+        "value": 52,
         "real": true
       },
       {
@@ -598,7 +598,7 @@
       },
       {
         "date": "2026-01-04",
-        "value": 93,
+        "value": 89,
         "real": true
       },
       {
@@ -608,52 +608,52 @@
       },
       {
         "date": "2026-01-18",
-        "value": 88,
+        "value": 85,
         "real": true
       },
       {
         "date": "2026-01-25",
-        "value": 72,
+        "value": 73,
         "real": true
       },
       {
         "date": "2026-02-01",
-        "value": 63,
+        "value": 58,
         "real": true
       },
       {
         "date": "2026-02-08",
-        "value": 45,
+        "value": 43,
         "real": true
       },
       {
         "date": "2026-02-15",
-        "value": 44,
-        "real": true
-      },
-      {
-        "date": "2026-02-22",
         "value": 41,
         "real": true
       },
       {
+        "date": "2026-02-22",
+        "value": 37,
+        "real": true
+      },
+      {
         "date": "2026-03-01",
-        "value": 67,
+        "value": 64,
         "real": true
       },
       {
         "date": "2026-03-08",
-        "value": 56,
+        "value": 53,
         "real": true
       },
       {
         "date": "2026-03-15",
-        "value": 38,
+        "value": 37,
         "real": true
       },
       {
         "date": "2026-03-22",
-        "value": 13,
+        "value": 12,
         "real": true
       },
       {
@@ -663,102 +663,102 @@
       },
       {
         "date": "2026-04-05",
-        "value": 53,
+        "value": 51,
         "real": true
       },
       {
         "date": "2026-04-12",
-        "value": 50,
+        "value": 48,
         "real": true
       },
       {
         "date": "2026-04-19",
-        "value": 29,
+        "value": 26,
         "real": true
       },
       {
         "date": "2026-04-26",
-        "value": 52,
+        "value": 49,
         "real": true
       },
       {
         "date": "2026-05-03",
-        "value": 57,
+        "value": 54,
         "real": true
       },
       {
         "date": "2026-05-10",
-        "value": 38,
-        "real": true
-      },
-      {
-        "date": "2026-05-17",
-        "value": 38,
-        "real": true
-      },
-      {
-        "date": "2026-05-24",
-        "value": 43,
-        "real": true
-      },
-      {
-        "date": "2026-05-31",
-        "value": 39,
-        "real": true
-      },
-      {
-        "date": "2026-06-07",
-        "value": 40,
-        "real": true
-      },
-      {
-        "date": "2026-06-14",
-        "value": 80,
-        "real": true
-      },
-      {
-        "date": "2026-06-21",
-        "value": 42,
-        "real": true
-      },
-      {
-        "date": "2026-06-28",
-        "value": 38,
-        "real": true
-      },
-      {
-        "date": "2026-07-05",
-        "value": 32,
-        "real": true
-      },
-      {
-        "date": "2026-07-12",
-        "value": 39,
-        "real": true
-      },
-      {
-        "date": "2026-07-19",
         "value": 36,
         "real": true
       },
       {
-        "date": "2026-07-26",
+        "date": "2026-05-17",
+        "value": 33,
+        "real": true
+      },
+      {
+        "date": "2026-05-24",
+        "value": 41,
+        "real": true
+      },
+      {
+        "date": "2026-05-31",
         "value": 35,
         "real": true
       },
       {
-        "date": "2026-08-02",
-        "value": 34,
+        "date": "2026-06-07",
+        "value": 38,
         "real": true
       },
       {
-        "date": "2026-08-09",
+        "date": "2026-06-14",
+        "value": 77,
+        "real": true
+      },
+      {
+        "date": "2026-06-21",
+        "value": 40,
+        "real": true
+      },
+      {
+        "date": "2026-06-28",
+        "value": 37,
+        "real": true
+      },
+      {
+        "date": "2026-07-05",
         "value": 30,
         "real": true
       },
       {
-        "date": "2026-08-16",
+        "date": "2026-07-12",
+        "value": 38,
+        "real": true
+      },
+      {
+        "date": "2026-07-19",
         "value": 34,
+        "real": true
+      },
+      {
+        "date": "2026-07-26",
+        "value": 33,
+        "real": true
+      },
+      {
+        "date": "2026-08-02",
+        "value": 32,
+        "real": true
+      },
+      {
+        "date": "2026-08-09",
+        "value": 29,
+        "real": true
+      },
+      {
+        "date": "2026-08-16",
+        "value": 32,
         "real": true
       },
       {
@@ -768,44 +768,44 @@
       },
       {
         "date": "2026-08-30",
-        "value": 72,
+        "value": 69,
         "real": true
       },
       {
         "date": "2026-09-06",
-        "value": 65,
+        "value": 60,
         "real": true
       },
       {
         "date": "2026-09-13",
-        "value": 45,
+        "value": 44,
         "real": true
       },
       {
         "date": "2026-09-20",
-        "value": 42,
+        "value": 37,
         "real": true
       },
       {
         "date": "2026-09-27",
-        "value": 72,
+        "value": 71,
         "real": true
       },
       {
         "date": "2026-10-04",
-        "value": 67,
+        "value": 65,
         "real": true
       },
       {
         "date": "2026-10-11",
-        "value": 47,
+        "value": 46,
         "real": true
       }
     ]
   },
   "money": null,
   "errors": {
-    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fd481bfe9f0>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
+    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f7eed32e690>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
   },
   "all_real": true
 }
