@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T19:37:53.115921+00:00",
+  "generated_at": "2026-10-24T22:11:20.320685+00:00",
   "google_trends": {
     "بورس": [
       {
@@ -74,7 +74,7 @@
       },
       {
         "date": "2026-01-25",
-        "value": 73,
+        "value": 74,
         "real": true
       },
       {
@@ -94,7 +94,7 @@
       },
       {
         "date": "2026-02-22",
-        "value": 58,
+        "value": 57,
         "real": true
       },
       {
@@ -254,17 +254,17 @@
       },
       {
         "date": "2026-10-04",
-        "value": 83,
+        "value": 82,
         "real": true
       },
       {
         "date": "2026-10-11",
-        "value": 86,
+        "value": 78,
         "real": true
       },
       {
         "date": "2026-10-18",
-        "value": 77,
+        "value": 78,
         "real": true
       }
     ],
@@ -286,12 +286,12 @@
       },
       {
         "date": "2025-11-09",
-        "value": 43,
+        "value": 42,
         "real": true
       },
       {
         "date": "2025-11-16",
-        "value": 40,
+        "value": 39,
         "real": true
       },
       {
@@ -306,7 +306,7 @@
       },
       {
         "date": "2025-12-07",
-        "value": 54,
+        "value": 53,
         "real": true
       },
       {
@@ -321,7 +321,7 @@
       },
       {
         "date": "2025-12-28",
-        "value": 84,
+        "value": 83,
         "real": true
       },
       {
@@ -336,7 +336,7 @@
       },
       {
         "date": "2026-01-18",
-        "value": 77,
+        "value": 76,
         "real": true
       },
       {
@@ -361,7 +361,7 @@
       },
       {
         "date": "2026-02-22",
-        "value": 52,
+        "value": 51,
         "real": true
       },
       {
@@ -486,12 +486,12 @@
       },
       {
         "date": "2026-08-16",
-        "value": 42,
+        "value": 41,
         "real": true
       },
       {
         "date": "2026-08-23",
-        "value": 59,
+        "value": 58,
         "real": true
       },
       {
@@ -793,19 +793,19 @@
       },
       {
         "date": "2026-10-11",
-        "value": 45,
+        "value": 44,
         "real": true
       },
       {
         "date": "2026-10-18",
-        "value": 42,
+        "value": 40,
         "real": true
       }
     ]
   },
   "money": null,
   "errors": {
-    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f824ad0c980>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
+    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f433f2627b0>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
   },
   "all_real": true
 }
