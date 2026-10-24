@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T17:09:05.873575+00:00",
+  "generated_at": "2026-10-24T19:37:53.115921+00:00",
   "google_trends": {
     "بورس": [
       {
@@ -44,7 +44,7 @@
       },
       {
         "date": "2025-12-14",
-        "value": 82,
+        "value": 83,
         "real": true
       },
       {
@@ -104,7 +104,7 @@
       },
       {
         "date": "2026-03-08",
-        "value": 67,
+        "value": 68,
         "real": true
       },
       {
@@ -224,7 +224,7 @@
       },
       {
         "date": "2026-08-23",
-        "value": 83,
+        "value": 82,
         "real": true
       },
       {
@@ -259,12 +259,12 @@
       },
       {
         "date": "2026-10-11",
-        "value": 82,
+        "value": 86,
         "real": true
       },
       {
         "date": "2026-10-18",
-        "value": 80,
+        "value": 77,
         "real": true
       }
     ],
@@ -286,7 +286,7 @@
       },
       {
         "date": "2025-11-09",
-        "value": 42,
+        "value": 43,
         "real": true
       },
       {
@@ -311,7 +311,7 @@
       },
       {
         "date": "2025-12-14",
-        "value": 52,
+        "value": 53,
         "real": true
       },
       {
@@ -371,7 +371,7 @@
       },
       {
         "date": "2026-03-08",
-        "value": 21,
+        "value": 22,
         "real": true
       },
       {
@@ -578,7 +578,7 @@
       },
       {
         "date": "2025-12-14",
-        "value": 52,
+        "value": 54,
         "real": true
       },
       {
@@ -638,7 +638,7 @@
       },
       {
         "date": "2026-03-08",
-        "value": 55,
+        "value": 56,
         "real": true
       },
       {
@@ -698,7 +698,7 @@
       },
       {
         "date": "2026-05-31",
-        "value": 36,
+        "value": 37,
         "real": true
       },
       {
@@ -793,7 +793,7 @@
       },
       {
         "date": "2026-10-11",
-        "value": 46,
+        "value": 45,
         "real": true
       },
       {
@@ -805,7 +805,7 @@
   },
   "money": null,
   "errors": {
-    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7eff1e9833e0>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
+    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f824ad0c980>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
   },
   "all_real": true
 }
