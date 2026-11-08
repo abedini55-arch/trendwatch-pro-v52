@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T16:57:35.433819+00:00",
+  "generated_at": "2026-11-08T20:58:09.077582+00:00",
   "google_trends": {
     "بورس": [
       {
@@ -259,17 +259,17 @@
       },
       {
         "date": "2026-10-25",
-        "value": 72,
+        "value": 74,
         "real": true
       },
       {
         "date": "2026-11-01",
-        "value": 71,
+        "value": 69,
         "real": true
       },
       {
         "date": "2026-11-08",
-        "value": 81,
+        "value": 75,
         "real": true
       }
     ],
@@ -531,17 +531,17 @@
       },
       {
         "date": "2026-10-25",
-        "value": 48,
+        "value": 45,
         "real": true
       },
       {
         "date": "2026-11-01",
-        "value": 42,
+        "value": 43,
         "real": true
       },
       {
         "date": "2026-11-08",
-        "value": 43,
+        "value": 39,
         "real": true
       }
     ],
@@ -808,19 +808,19 @@
       },
       {
         "date": "2026-11-01",
-        "value": 38,
+        "value": 39,
         "real": true
       },
       {
         "date": "2026-11-08",
-        "value": 40,
+        "value": 37,
         "real": true
       }
     ]
   },
   "money": null,
   "errors": {
-    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f5b735d0ef0>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
+    "money": "TSETMC /api/ClosingPrice/GetMarketWatch: https://cdn.tsetmc.com: HTTPSConnectionPool(host='cdn.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven=0&RefID=0 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f666ce83f50>, 'Connection to cdn.tsetmc.com timed out. (connect timeout=15)')) | https://cdn10.tsetmc.com: HTTPSConnectionPool(host='cdn10.tsetmc.com', port=443): Max retries exceeded with url: /api/ClosingPrice/GetMarketWatch?market=0&industrialGroup=&paperTypes%5B0%5D=1&paperTypes%5B1%5D=2&paperTypes%5B2%5D=3&paperTypes%5B3%5D=4&paperTypes%5B4%5D=5&paperTypes%5B5%5D=6&paperTypes%5B6%5D=7&paperTypes%5B7%5D=8&paperTypes%5B8%5D=9&showTraded=false&withBestLimits=false&hEven="
   },
   "all_real": true
 }
